@@ -4,30 +4,17 @@
 
 The task is to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code. The functionality and mockup are described below.
 
-## User Story
+### Functionality and Mock-Up
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+The landing page presents the user with the "Start Quiz" button and the navigation option to "View Highscores" and the "Time" value set at 0.
 
-## Acceptance Criteria
+Clicking the "Start Quiz" button presents the user with questions and answer options in succession. The timer is initialized with a value and immediately begins countdown.
 
-Create a code quiz that contains the following requirements:
+Score is calculated by time remaining. Answering quickly and correctly results in a higher score. Answering incorrectly results in a time penalty (for example, 15 seconds are subtracted from time remaining).
 
-* A start button that when clicked a timer starts and the first question appears.
+When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in localStorage.
 
-  * Questions contain buttons for each answer.
-  * 
-  * When answer is clicked, the next question appears
-  * 
-  * If the answer clicked was incorrect then subtract time from the clock
-* The quiz should end when all questions are answered or the timer reaches 0.
-
-  * When the game ends, it should display their score and give the user the ability to save their initials and their score
-
-## Mock-Up
+The  application is responsive, ensuring that it adapts to multiple screen sizes.
 
 The following animation demonstrates the application functionality:
 
